@@ -1,12 +1,14 @@
 # MEANStackProject
 1. Angular 6
-2. Angular Material
-3. Express
-4. MongoDB
-5. Node.js
+2. Angular Material - UI Material Components
+3. Express - is a web application framework for Node.js
+4. MongoDB - MongoDB can be setup locally or use cloud based solutions
+5. Node.js - Java Script runtime engine
 6. HighCharts
 7. ngx-Charts
 8. D3js Charts
+9. Mongoose (ORM) Object Modeling Tool for Node.js
+10. Axiox - Promise based HTTP client for the browser and Node.js
 
 # MongoDB Setup
 1. Start MongoDB >net start MongoDB
