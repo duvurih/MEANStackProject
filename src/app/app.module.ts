@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, Router } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppComponent } from './app.component';
 import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts';
@@ -48,6 +49,7 @@ const appRoutes: Routes = [
     //MatSortModule,
     MatExpansionModule,
     HttpClientModule,
+    NgxChartsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],
