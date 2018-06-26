@@ -7,7 +7,13 @@ const path = require('path');
 //const mongojs = require('mongojs');
 //const db = mongojs('mongodb://hk_india:indian12@ds115971.mlab.com:15971/hkmongodb',['FinancialData']);
 
-//Getting our post routes
+const mongoose = require('mongoose');
+if ('development' == app.get('env')){
+    //app.use(express.errorHandler());
+    mongoose.connect('mongodb://hkindia:indian12@localhost:27017/mycustomers');
+}
+
+//Getting our routes
 const routes = require('./server/routes/routes');
 
 //express to join the server path with output path

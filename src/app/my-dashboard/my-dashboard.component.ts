@@ -82,6 +82,11 @@ export class MyDashboardComponent  implements OnInit {
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort;      
     });
+
+    this.dataContextService.httpGetFinancialData().subscribe(data =>{
+        console.log('financial data');
+        console.log(data);
+    });
   }  
 
 }

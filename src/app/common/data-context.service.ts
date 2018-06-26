@@ -14,5 +14,11 @@ export class DataContextService {
     let observable: any;
     observable = this.http.get('/routes/posts').pipe(map((response) => response));
     return observable;
-  }
+  };
+
+  httpGetFinancialData(){
+    let observable: any;
+    observable = this.http.get('/routes/financialData').pipe(map((response) => response));
+    return observable;
+  }  
 }
